@@ -1,3 +1,38 @@
 # Ignore macOS system files used to store folder metadata
 .DS_Store
 
+# Virtual environment
+.venv/
+env/
+venv/
+
+# Python bytecode files
+__pycache__/
+*.pyc
+
+# Editor/IDE files
+.idea/
+.vscode/
+*.swp
+
+# Operating System files
+.DS_Store
+Thumbs.db
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+# Log files
+*.log
+
+# Temporary files
+*.tmp
+
+# Configuration files (if sensitive or environment-specific)
+config.ini
+.env
+
+# Ok exec files
+.ok_history
