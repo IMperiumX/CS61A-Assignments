@@ -1,3 +1,6 @@
+from operator import pow, mod
+
+
 def digit(n, k):
     """Return the digit that is k from the right of n for positive integers n and k.
 
@@ -8,7 +11,7 @@ def digit(n, k):
     >>> digit(3579, 10)
     0
     """
-    return ____
+    return mod((n // pow(10, k)), 10)
 
 
 def middle(a, b, c):
@@ -26,7 +29,15 @@ def middle(a, b, c):
     >>> middle(30, 5, 40)
     30
     """
-    return ____
+    nums = [a, b, c]
+    left = min(nums)
+    right = max(nums)
+
+    nums.remove(left)
+    nums.remove(right)
+
+    return nums[-1]
+
 
 
 def falling(n, k):
@@ -41,7 +52,11 @@ def falling(n, k):
     >>> falling(4, 0)
     1
     """
-    "*** YOUR CODE HERE ***"
+    if not (n and k):
+        return 1
+
+    return n * falling(n - 1, k - 1)
+
 
 
 def divisible_by_k(n, k):
@@ -99,4 +114,3 @@ def double_eights(n):
     False
     """
     "*** YOUR CODE HERE ***"
-
