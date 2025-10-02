@@ -35,4 +35,4 @@ config.ini
 .env
 
 # Ok exec files
-.ok_history
+.ok*
