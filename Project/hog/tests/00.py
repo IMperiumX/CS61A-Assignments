@@ -8,16 +8,16 @@ test = {
           'code': r"""
           >>> test_dice = make_test_dice(4, 1, 2)
           >>> test_dice()
-          edcbd82ba98a8122be244fa325c62071
+          8173f986869be686c354ef4558841f7c
           # locked
           >>> test_dice() # Second call
-          43d176e102c8d95338faf8791aa509b3
+          c4933a0dd093653b499b3bff4a4c8ec8
           # locked
           >>> test_dice() # Third call
-          46caef5ffd6d72c8757279cbcf01b12f
+          62a329e8634e8fe7dd0b7f2080aba699
           # locked
           >>> test_dice() # Fourth call
-          edcbd82ba98a8122be244fa325c62071
+          8173f986869be686c354ef4558841f7c
           # locked
           """,
           'hidden': False,
@@ -35,7 +35,7 @@ test = {
     {
       'cases': [
         {
-          'answer': '5c489e1123a9d0cfdd0c26a27a56d42b',
+          'answer': '3f4d6d6f24c125040335c759e632092f',
           'choices': [
             'make_test_dice(6)',
             'make_fair_dice(6)',
